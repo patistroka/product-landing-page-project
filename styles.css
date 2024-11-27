@@ -1,0 +1,244 @@
+html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Suggestion: Ensure a contrasting background if needed */
+  }
+  
+  body {
+    padding-top: 60px; /* Adjust this value based on the height of your navbar */
+  }
+  
+  #header {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('https://images.pexels.com/photos/1445416/pexels-photo-1445416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Improvement: Changed from 'center' to align the content at the top */
+  }
+  
+  .shadow-line {
+    width: 100%;
+    height: 4px; /* Line thickness */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); /* Suggestion: Add or tweak color */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    justify-content: center;
+  }
+  
+  #header-img {
+    max-height: 80px;
+    width: auto;
+  }
+  
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 50px; /* Ensure consistency on spacing */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Improved color transparency for better readability */
+    padding: 10px 0;
+    z-index: 1000; /* Added to ensure nav-bar stays on top */
+  }
+  
+  #nav-bar .nav-link {
+    text-decoration: none;
+    color: #ffffff; /* Suggestion: Consistent contrast with nav background */
+    font-size: 0.8rem;
+    padding: 5px 0;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline; /* Clarified hover effect */
+  }
+  
+  .products {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .products h2 {
+    margin-bottom: 15px;
+  }
+  
+  .divider {
+    border-bottom: 5px solid #9cb4ae;
+    width: 30%;
+    margin: 2px auto 20px auto; /* Adjusted margin for better spacing */
+  }
+  
+  .products p:first-of-type {
+    margin-top: 40px; /* Added for consistent spacing */
+  }
+  
+  .products p {
+    margin-bottom: 5px;
+    line-height: 1.4; /* Set for readability */
+    font-size: 1.1rem; /* Unified font sizing */
+  }
+  
+  .gallery {
+    display: inline-block;
+    margin: 5px;
+    width: 360px;
+  }
+  
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Unified gap for gallery items */
+  }
+  
+  .gallery .description {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .gallery:hover {
+    border: 3px solid #9cb4ae; /* Suggestion: Add focus with border */
+    color: #729aa3;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Added object-fit for better image scaling */
+  }
+  
+  .about {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  
+  .medium-divider {
+    border-bottom: 5px solid #9cb4ae;
+    width: 70%;
+    margin: 0 auto 40px auto; /* Unified margins */
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Added margin */
+    flex-direction: column;
+  }
+  
+  .video-description {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px; /* Added for spacing */
+    color: #1c1c1c;
+    max-width: 800px; /* Set a max width for readability */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4; /* Improved line-height for readability */
+  }
+  
+  .contact {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  
+  .contact h2 {
+    margin-top: 50px; /* Added consistent top margin */
+  }
+  
+  form {
+    width: 60vw; /* Ensure responsive layout */
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none; /* Removed fieldset border for cleaner look */
+    padding: 0;
+    margin: 0;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #cfe3de; /* Consistent color scheme */
+    border: 0.5px solid #cfe3de; /* Unified border style */
+    color: #1c1c1c;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: auto;
+    padding: 0.5em 1em;
+    margin: 1em auto; /* Centered button */
+    height: auto;
+    font-size: 0.9rem;
+    background-color: #cfe3de; /* Improved consistency */
+    border-color: #9cb4ae; /* Border-color unified */
+    min-width: 150px; /* Set a minimum width for buttons */
+    cursor: pointer;
+    position: relative;
+    top: 10px; /* Ensured spacing */
+  }
+  
+  .footer-divider {
+    position: relative;
+    width: 100vw;
+    height: 1px;
+    background-color: #9cb4ae; /* Unified color */
+    margin: 0;
+    box-sizing: border-box; /* Ensure consistent sizing */
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic; /* Style consistent with content */
+  }
+  
+  @media (max-width: 768px) {
+    .product, .about, .contact {
+      font-size: 1.2rem; /* Adjusted for mobile responsiveness */
+    }
+  
+    .gallery img {
+      height: auto; /* Made flexible for smaller screens */
+    }
+  
+    form {
+      width: 90vw; /* Expanded form width for smaller screens */
+    }
+  }
